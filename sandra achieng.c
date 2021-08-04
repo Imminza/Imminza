@@ -16,6 +16,7 @@ char bookname[50];
 char author[50];
 int noofpages;
 float price;
+char user[10];
 char username[5];
 };
 int main()
@@ -49,10 +50,11 @@ int main()
     printf("3.return book\n");
     printf("4.lend a book\n");
     printf("5.delete users\n");
+    printf("6.add user\n");
 
-    printf("6.fine if book returned late");
+    printf("7.fine if book returned late");
 
-    printf("\n7.exit\n");printf("\n\nEnter one of the above:");
+    printf("\n8.exit\n");printf("\n\nEnter one of the above:");
     scanf("%d",&j);
     switch(j){
     /*Add book*/
@@ -113,6 +115,13 @@ case 6:
         break;
         exit(0);
 
+    }
+    break;
+case 7:
+    {
+        printf("Enter User:");
+        scanf("%s",lib[i].user);
+        printf("adduser");
     }
     }
 
